@@ -3,8 +3,6 @@ import mediapipe as mp #El algılama
 import pyautogui #Fare imlecini ekranda hareket ettirmek ve tıklama gibi işlemleri yapmak için
 import os #Dosya ve klasör işlemleri için 
 from datetime import datetime #Ekran görüntüsü tarihi
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QVBoxLayout, QLabel
-from PyQt5.QtCore import QThread, pyqtSignal
 
 cap = cv2.VideoCapture(0) #Kamerayı başlatır
 hands = mp.solutions.hands.Hands() #MediaPipe, elleri algılamak için sınıf oluşturur.
